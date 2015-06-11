@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"  >
+
+    <LinearLayout
+        android:id="@+id/main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_alignParentBottom="true"
+        android:background="#3C4A5A"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/maintab_button1"
+            android:text="Tab1"
+            android:gravity="bottom|center"
+            android:textSize="12sp"
+            android:paddingTop="8dp"
+            android:textColor="#ffffff"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#333E4B" 
+            android:drawableTop="@drawable/statusbar_wifi_icon1"/>
+
+        <Button
+            android:id="@+id/maintab_button2"
+            android:text="Tab2"
+            android:gravity="bottom|center"
+            android:textSize="12sp"
+            android:paddingTop="8dp"
+            android:textColor="#ffffff"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#333E4B" 
+            android:drawableTop="@drawable/statusbar_wifi_icon2" />
+
+        <Button
+            android:id="@+id/maintab_button3"
+            android:text="Tab3"
+            android:gravity="bottom|center"
+            android:textSize="12sp"
+            android:paddingTop="8dp"
+            android:textColor="#ffffff"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#333E4B" 
+            android:drawableTop="@drawable/statusbar_wifi_icon3" />
+
+        <Button
+            android:id="@+id/maintab_button4"
+            android:text="Tab4"
+            android:gravity="bottom|center"
+            android:textSize="12sp"
+            android:paddingTop="8dp"
+            android:textColor="#ffffff"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#333E4B" 
+            android:drawableTop="@drawable/statusbar_wifi_icon4" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/main_bottom" />
+
+</RelativeLayout>
